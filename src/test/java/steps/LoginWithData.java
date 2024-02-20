@@ -22,10 +22,12 @@ public class LoginWithData {
 	   System.out.println("Entered password is "+string);
 	}
 
-	@When("I click on submit button")
-	public void i_click_on_submit_button() {
-	    System.out.println("Click on submit");
-	}
+
+@When("I click on submit {int} button")
+public void i_click_on_submit_button(Integer int1) {
+    System.out.println("Click on submit and data is "+int1);
+}
+
 
 	@Then("I should get logged into app")
 	public void i_should_get_logged_into_app() {
