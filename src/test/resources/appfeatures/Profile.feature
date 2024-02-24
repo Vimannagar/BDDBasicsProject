@@ -1,3 +1,4 @@
+@profile
 Feature: Profile functionality
 @sanity
 Scenario: verification of add profile

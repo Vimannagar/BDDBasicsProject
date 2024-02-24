@@ -7,11 +7,11 @@ import io.cucumber.testng.CucumberOptions;
 		
 		features = {"src\\test\\resources\\appfeatures\\Profile.feature"},
 		
-		glue = {"steps"},
+		glue = {"steps", "hooks"},
 		
 		plugin = {"pretty"},
 		
-		tags = "(@sanity or @functional) and (not @regression)"
+		tags = "@profile"
 
 		)
 
