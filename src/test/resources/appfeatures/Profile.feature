@@ -12,9 +12,9 @@ Scenario: verification of edit profile
 Given User is at the home page
 When User click on edit button
 And user update the details
-Then Profile should get updated
+Then Profile get updated
 
-@functional @sanity @regression
+@functional
 Scenario: verification of delete profile
 Given User is at the home page
 When User click on delete button

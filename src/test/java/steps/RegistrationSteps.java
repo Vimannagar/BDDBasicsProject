@@ -21,7 +21,7 @@ public class RegistrationSteps {
 		List<List<String>> data = dataTable.asLists();
 
 		for (List<String> ll : data) {
-			System.out.println(ll);
+			//System.out.println(ll);
 		}
 
 		List<String> firstList = data.get(0);

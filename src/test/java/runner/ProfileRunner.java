@@ -11,7 +11,10 @@ import io.cucumber.testng.CucumberOptions;
 		
 		plugin = {"pretty"},
 		
-		tags = "@profile"
+		dryRun = true
+		
+		
+	
 
 		)
 
