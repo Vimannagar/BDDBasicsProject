@@ -9,9 +9,10 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"uifeature"},
 		
-		plugin = {"pretty"},
+		plugin = {"pretty", "html:target/cucumber-reports/AmazonTestResults.html"},
 		
 		publish = true
+		
 		)
 
 public class AmazonRunnerTest extends AbstractTestNGCucumberTests
