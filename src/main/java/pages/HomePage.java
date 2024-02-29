@@ -15,7 +15,7 @@ public class HomePage {
 	
 	WebDriver driver;
 	
-	@FindBy(xpath = "//*[@id='nav-cart123']")
+	@FindBy(xpath = "//*[@id='nav-cart']")
 	WebElement cartIcon;
 	
 	@FindBy(xpath = "//*[@id='twotabsearchtextbox']")
