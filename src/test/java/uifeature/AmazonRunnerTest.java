@@ -9,6 +9,7 @@ import io.cucumber.testng.CucumberOptions;
 		
 		glue = {"uifeature"},
 		
+		
 		plugin = {"pretty", "html:target/cucumber-reports/AmazonTestResults.html"},
 		
 		publish = true

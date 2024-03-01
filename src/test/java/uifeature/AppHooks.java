@@ -1,5 +1,7 @@
 package uifeature;
 
+import java.io.IOException;
+
 import org.openqa.selenium.OutputType;
 import org.openqa.selenium.TakesScreenshot;
 import org.openqa.selenium.WebDriver;
@@ -8,16 +10,20 @@ import io.cucumber.java.After;
 import io.cucumber.java.Before;
 import io.cucumber.java.Scenario;
 import qa.DriverFactory;
+import utility.ReadProperty;
 
 public class AppHooks {
 	
 	WebDriver driver;
 	@Before
-	public void launchBrowser()
+	public void launchBrowser() throws IOException
 	{
 		DriverFactory df = new DriverFactory();
 		
-		driver = df.initBrowser("Chrome");
+		
+		String browsername = ReadProperty.getPropData("browser");
+		
+		driver = df.initBrowser(browsername);
 		
 		driver.manage().window().maximize();
 		
